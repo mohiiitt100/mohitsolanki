@@ -1,0 +1,159 @@
+/* ===============================
+   GLOBAL DESIGN SYSTEM
+   Mohit Solanki Portfolio
+================================ */
+
+/* -------- GOOGLE FONT -------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* -------- ROOT VARIABLES (COLOR CONTROL CENTER) -------- */
+:root {
+
+  /* Primary Brand Color */
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+
+  /* Backgrounds */
+  --bg-main: #f8fafc;
+  --bg-dark: #020617;
+
+  /* Text Colors */
+  --text-main: #0f172a;
+  --text-light: #64748b;
+  --text-white: #ffffff;
+
+  /* Accent */
+  --accent: #ff3b3b;
+
+  /* Border */
+  --border-color: #e2e8f0;
+
+  /* Container Width */
+  --container: 1280px;
+
+}
+
+/* -------- RESET -------- */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:var(--bg-main);
+  color:var(--text-main);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* -------- GLOBAL CONTAINER -------- */
+.container{
+  max-width:var(--container);
+  margin:auto;
+  padding:0 24px;
+}
+
+/* -------- TYPOGRAPHY SYSTEM -------- */
+
+h1,h2,h3,h4,h5,h6{
+  font-weight:700;
+  line-height:1.2;
+  color:var(--text-main);
+}
+
+h1{
+  font-size:clamp(36px,5vw,64px);
+  letter-spacing:-1px;
+}
+
+h2{
+  font-size:clamp(30px,4vw,48px);
+}
+
+h3{
+  font-size:28px;
+}
+
+h4{
+  font-size:22px;
+}
+
+p{
+  font-size:16px;
+  color:var(--text-light);
+  line-height:1.8;
+}
+
+/* -------- LINKS -------- */
+a{
+  text-decoration:none;
+  color:inherit;
+  transition:0.3s ease;
+}
+
+/* -------- BUTTON SYSTEM -------- */
+.btn-primary{
+  background:var(--primary);
+  color:white;
+  padding:12px 26px;
+  border-radius:999px;
+  font-weight:600;
+  display:inline-block;
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  background:var(--primary-hover);
+  transform:translateY(-2px);
+}
+
+/* -------- SECTION SPACING -------- */
+.section{
+  padding:100px 0;
+}
+
+/* -------- CARD STYLE -------- */
+.card{
+  background:white;
+  border-radius:16px;
+  padding:28px;
+  border:1px solid var(--border-color);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* -------- IMAGE GLOBAL -------- */
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* -------- SELECTION COLOR -------- */
+::selection{
+  background:var(--primary);
+  color:white;
+}
+
+/* -------- SCROLLBAR (Premium Look) -------- */
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#f1f5f9;
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--primary);
+  border-radius:10px;
+}

@@ -1,0 +1,265 @@
+<section id="monitor-scroll-section" class="relative bg-black overflow-hidden flex flex-col items-center pt-24 min-h-screen">
+    
+    <div class="z-30 text-center mb-12">
+        <h2 class="text-white font-serif italic text-4xl md:text-6xl tracking-tight">
+            Recent <span class="text-[#fcd34d]">Projects</span>
+        </h2>
+    </div>
+
+    <div class="monitor-wrapper flex flex-col items-center w-full px-4">
+        
+        <div id="slider-container" class="relative w-full max-w-[1400px] overflow-hidden cursor-grab active:cursor-grabbing">
+            
+            <div id="monitor-track" class="flex gap-6 md:gap-10 py-10">
+                
+                <div class="unique-card group">
+                    <div class="card-inner">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" alt="Askot">
+                            <div class="overlay-tag">Shopify</div>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="title">Askot Arakot</h3>
+                            <p class="description">High-end fashion store with custom liquid sections and premium UI.</p>
+                            <a href="#" class="eye-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unique-card group">
+                    <div class="card-inner">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" alt="Kaaghaz">
+                            <div class="overlay-tag">Web App</div>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="title">Kaaghaz Ghar</h3>
+                            <p class="description">Premium architecture portfolio with interactive GSAP animations.</p>
+                            <a href="#" class="eye-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unique-card group">
+                    <div class="card-inner">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800" alt="Khat">
+                            <div class="overlay-tag">Branding</div>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="title">Khat Brand</h3>
+                            <p class="description">Minimalist branding and e-commerce strategy for lifestyle products.</p>
+                            <a href="#" class="eye-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unique-card group">
+                    <div class="card-inner">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" alt="Tasawur">
+                            <div class="overlay-tag">UX/UI</div>
+                        </div>
+                        <div class="content-box">
+                            <h3 class="title">Tasawur</h3>
+                            <p class="description">A modern digital experience crafted for high-conversion sales.</p>
+                            <a href="#" class="eye-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* PREMIUM UNIQUE CARD STYLING */
+.unique-card {
+    flex-shrink: 0;
+    width: 350px;
+    height: 480px;
+    position: relative;
+    border-radius: 30px;
+    background: #0d0d0d;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(40%);
+    transition: transform 0.8s ease, filter 0.5s ease;
+}
+
+.overlay-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(252, 211, 77, 0.9);
+    color: #000;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+}
+
+.content-box {
+    padding: 25px;
+    background: linear-gradient(to bottom, #0d0d0d, #141414);
+    position: relative;
+    z-index: 2;
+    margin-top: -30px; /* Overlap effect for premium look */
+    border-radius: 30px 30px 0 0;
+    flex-grow: 1;
+}
+
+.title {
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px; /* Removed extra space */
+}
+
+.description {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.eye-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background: #fcd34d;
+    border-radius: 20px; /* Unique shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    transform: rotate(-10deg);
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 20px rgba(252, 211, 77, 0.2);
+}
+
+/* Hover Effects */
+.unique-card:hover {
+    border-color: rgba(252, 211, 77, 0.5);
+    transform: translateY(-10px);
+}
+
+.unique-card:hover .image-wrapper img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.unique-card:hover .eye-btn {
+    transform: rotate(0deg) scale(1.1);
+    background: #fff;
+}
+
+#monitor-track {
+    width: max-content;
+    display: flex;
+    padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .unique-card { width: 300px; height: 440px; }
+    .title { font-size: 22px; }
+}
+</style>
+
+<script>
+    const track = document.getElementById('monitor-track');
+    const container = document.getElementById('slider-container');
+    
+    // 1. Double the cards for seamless loop
+    track.innerHTML += track.innerHTML;
+
+    let xPos = 0;
+    let scrollSpeed = 0.8; 
+    let isHovered = false;
+    let isDragging = false;
+    let startX, scrollLeft;
+
+    // 2. Auto-Slide Function
+    function autoPlay() {
+        if (!isHovered && !isDragging) {
+            xPos -= scrollSpeed;
+            if (Math.abs(xPos) >= track.scrollWidth / 2) {
+                xPos = 0;
+            }
+            gsap.set(track, { x: xPos });
+        }
+        requestAnimationFrame(autoPlay);
+    }
+    autoPlay();
+
+    // 3. Manual Scroll/Drag Logic
+    container.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = xPos;
+        scrollSpeed = 0; // Stop auto-slide while dragging
+    });
+
+    container.addEventListener('mouseleave', () => {
+        isDragging = false;
+        isHovered = false;
+        scrollSpeed = 0.8;
+    });
+
+    container.addEventListener('mouseup', () => {
+        isDragging = false;
+        scrollSpeed = 0.8;
+    });
+
+    container.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - track.offsetLeft;
+        const walk = (x - startX); 
+        xPos = scrollLeft + walk;
+        gsap.set(track, { x: xPos });
+    });
+
+    // Pause on hover
+    container.addEventListener('mouseenter', () => isHovered = true);
+    container.addEventListener('mouseleave', () => isHovered = false);
+</script>
+
+
+
+
